@@ -34,7 +34,17 @@
 int main() {
 
 	printf("Project Euler 5\n");
-	printf("added line from laptop 206");
+	printf("added line from laptop 206\n");
+
+	int upperLimit = 0;
+
+	printf("Please enter the upper limit value: ");
+	scanf("%d", &upperLimit);
+
+	printf("\n%d", upperLimit);
+
+
+
 
 
 
