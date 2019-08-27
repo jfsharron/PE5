@@ -33,15 +33,42 @@
 //  ===========================================================================
 int main() {
 
-	printf("Project Euler 5\n");
-	printf("added line from laptop 206\n");
-
 	int upperLimit = 0;
+	int flag = 0;
+	int i = 1;
 
 	printf("Please enter the upper limit value: ");
 	scanf("%d", &upperLimit);
+	printf("\nVerify upperLimit: %d\n", upperLimit);  //  TODO remove
+	int answer = upperLimit;
 
-	printf("\n%d", upperLimit);
+
+	//  do loop 1 to check values 1-upperLimit to see if upperLimit dividable
+	//  with no remainder
+	do
+	{
+		if (upperLimit % i == 0)
+		{
+			flag = 0;
+			i++;
+			printf("flag = %d\n", flag);
+			printf("i = %d\n", i);		
+		}
+		else
+		{
+			flag = 1;
+			i++;
+			printf("flag = %d\n", flag);
+			printf("i = %d\n", i);
+		}
+	} while ((i <= upperLimit) && (flag == 0));
+	//  end do loop 1
+
+
+
+
+
+
 
 
 
